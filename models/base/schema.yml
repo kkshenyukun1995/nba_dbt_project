@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: base_teams
+    description: Base model for NBA teams data from NBA API
+    columns:
+      - name: team_id
+        description: Unique identifier for each team
+        tests:
+          - unique
+          - not_null
+      
+      - name: team_full_name
+        description: Full name of the team
+        tests:
+          - not_null
+      
+      - name: team_abbreviation
+        description: Three-letter team abbreviation
+        tests:
+          - not_null
+      
+      - name: team_nickname
+        description: Team nickname/mascot
+      
+      - name: team_city
+        description: City where the team is based
+      
+      - name: team_state
+        description: State where the team is based
+      
+      - name: year_founded
+        description: Year the team was founded

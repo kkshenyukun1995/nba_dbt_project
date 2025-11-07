@@ -7,3 +7,7 @@ logs/
 *.duckdb
 logs/
 __pycache__/
+.DS_Store
+*.log
+.env*
+credentials.yml
